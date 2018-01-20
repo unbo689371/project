@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+
+    <head>
+        <title>留言板</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <style>
+            table {
+                border: 1px solid black;  
+                border-collapse: collapse;
+            }
+
+            tr,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                height:40px;
+            }
+            td[align=left] {
+                text-indent: 12px;
+            }
+            th{
+                text-align:center;
+            }
+
+        </style>
+        
+
+        <h1 style="text-align:center;">留言板</h1> 
+        <table style="width:80%"align="center">
+            <tr style="border: 0.5px">
+                <th colspan="2"></th>
+                <th><input type="button" value="新增留言" style="width:80px;height:25px;font-size:16px;background:blue;color:white;"></th>
+            </tr>
+            <tr align="center">
+                <td width="65%"><b>主題</b></td>
+                <td width="20%"><b>發文者</b></td>
+                <td width="15%"><b>功能</b></td>
+            </tr>
+
+            <tr align="center">
+                <td align="left">今天天氣真好</td>
+                <td>小明</td>
+                <td>
+                    <input type="button" value="回復" style="width:50px;height:25px;font-size:16px;background:green;color:white;">
+                    <input type="button" value="刪除" style="width:50px;height:25px;font-size:16px;background:red;color:white;">
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td align="left">聽說一中街很多東西可以吃</td>
+                <td>小美</td>
+                <td>
+                    <input type="button" value="回復" style="width:50px;height:25px;font-size:16px;background:green;color:white;">
+                    <input type="button" value="刪除" style="width:50px;height:25px;font-size:16px;background:red;color:white;">
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td align="left">程式設計很好玩</td>
+                <td>阿傑</td>
+                <td>
+                    <input type="button" value="回復" style="width:50px;height:25px;font-size:16px;background:green;color:white;">
+                    <input type="button" value="刪除" style="width:50px;height:25px;font-size:16px;background:red;color:white;">
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td align="left">今天天氣真好</td>
+                <td>大美</td>
+                <td>
+                    <input type="button" value="回復" style="width:50px;height:25px;font-size:16px;background:green;color:white;">
+                    <input type="button" value="刪除" style="width:50px;height:25px;font-size:16px;background:red;color:white;">
+                </td>
+            </tr>
+        </table>
+
+        <p></p>
+
+        <div style=text-align:center>
+            <div class="container">                 
+                <ul class="pagination">
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+
+</html>
