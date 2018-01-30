@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<title>一中index-test</title>
+<style>
+body {
+    font-family: Verdana,sans-serif;
+    padding-top: 20px;
+
+}
+div#header, div#footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+div#content {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+div.article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+div#menu ul {
+    padding: 0;
+}
+
+div#menu ul li {
+    display: inline;
+    padding-left: 5px; 
+}
+
+div#header {
+
+    color:aqua;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<div id="menu">
+    <nav class="nav navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">一中街美食地圖<img alt="LOGO" src="logo.png" style="width:35px" style="height:35px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <img src="logo.png" style="width:50px" style="height:50px" >
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">美食推薦<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">小吃</a></li>
+                        <li><a href="#">飲料</a></li>
+                        <li><a href="#">餐廳</a></li>
+                    </ul>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">留言評價<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">留言板</a></li>
+                        <li><a href="#">心得欣賞</a></li>
+                        <li><a href="#">人氣投票</a></li>
+                    </ul>
+                    <li><a data-toggle="tab" href="#menu1">店家地圖</a></li>
+                    <li><a data-toggle="tab" href="#menu2">美食介紹</a></li>
+                    <li><a data-toggle="tab" href="#menu3">交通位置</a></li>
+                    <li><a data-toggle="tab" href="#menu4">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<div id="header">
+    <h1><B>Welcome the 一中街</B></h1>
+    <!-- Slide Show -->
+    <section>
+        <img class="mySlides" src="B1.jpg" style="width:100%">
+        <img class="mySlides" src="B2.jpg" style="width:100%">
+        <img class="mySlides" src="B3.jpg" style="width:100%">
+    </section>
+</div>
+
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+</script>
+
+<div id="content">
+    <h2>Leaderboards</h2>
+    <div class="article">
+        <h2>News Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+    </div>
+
+    <div class="article">
+        <h2>News Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+    </div>
+
+    <div class="row">
+            <div class="col-sm-4">
+              <h3>Number 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              <img src="afternoon-tea.jpg" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+              <h3>Number 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              <img src="afternoon-tea.jpg" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+              <h3>Number 3</h3>        
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              <img src="afternoon-tea.jpg" style="width:100%">
+            </div>
+    </div>
+
+</div>
+
+<div id="footer">
+    <p>&copy; 2018 Monday Times. All rights reserved.</p>
+</div>
+
+</body>
+</html>
